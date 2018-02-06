@@ -1,5 +1,6 @@
 # alexnet
-这是一个图像识别的神经网络(CNN卷积神经网络)  
+这是一个图像识别的神经网络(CNN卷积神经网络)  
+
 my_layers:神经层  
 alexnet: main函数  
 read_data:读取图片和标签进行训练  
