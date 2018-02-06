@@ -9,7 +9,7 @@ sess = tf.InteractiveSession()
 #查找符合一定规则的所有文件，并将文件名以lis形式返回。
 image_filenames_0 = glob.glob("./image_dog/n02*/*.jpg")
 
-#这句是我添加的。因为读到的路径形式为：'./imagenet-dogs\\n02085620-Chihuahua\\n02085620_10074.jpg'，路径分隔符中除第1个之外，都是2个反斜杠，与例程不一致。这里将2个反斜杠替换为斜杠
+#读到的路径形式为：'./imagenet-dogs\\n02085620-Chihuahua\\n02085620_10074.jpg'，路径分隔符中除第1个之外，都是2个反斜杠，与例程不一致。这里将2个反斜杠替换为斜杠
 image_filenames = list(
     map(lambda image: image.replace('\\', '/'), image_filenames_0))
 
